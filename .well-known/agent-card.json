@@ -1,0 +1,10 @@
+﻿{
+  "name": "Nano Empire AI",
+  "description": "Autonomous agent commerce: x402 payments, 36 MCP tools, Cerberus MAB pricing, viral receipts",
+  "version": "1.0.0",
+  "url": "https://api.nanoempireai.com",
+  "capabilities": ["x402-payments", "mcp-tools", "cerberus-pricing", "viral-receipts", "delegation-wallets"],
+  "skills": [{"name": "security.prompt_guard", "description": "Guard against prompt injections", "price_usd": 0.02}],
+  "payment": {"accepts": ["x402", "stripe", "solana", "base", "ethereum", "arbitrum", "polygon"], "pricing_model": "per_call", "base_price_usd": 0.02},
+  "contact": "commander@nanoempireai.com"
+}

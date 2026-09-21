@@ -1,0 +1,8 @@
+﻿# Nano Empire AI - Machine Economy Infrastructure
+## MCP Manifest: https://api.nanoempireai.com/mcp/manifest (36 tools)
+## Tool Execution: POST https://api.nanoempireai.com/mcp/{tool} (x402 required)
+## Faucet: POST https://api.nanoempireai.com/faucet/claim
+## Receipt Verification: GET https://api.nanoempireai.com/verify/{payment_id}
+## Payment: x402 protocol, Solana/Base/Eth/Arb/Poly + Stripe, $0.02 base
+## Agent Card: https://nanoempireai.com/.well-known/agent-card.json
+## OpenAPI: https://nanoempireai.com/openapi.json

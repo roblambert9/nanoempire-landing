@@ -1,0 +1,11 @@
+﻿{
+  "openapi": "3.1.0",
+  "info": {"title": "Nano Empire AI MCP Gateway", "version": "1.0.0"},
+  "servers": [{"url": "https://nano-empire-mcp-1064490927432.us-central1.run.app"}],
+  "paths": {
+    "/mcp/manifest": {"get": {"summary": "Get all 36 MCP tools with pricing"}},
+    "/mcp/{tool}": {"post": {"summary": "Execute MCP tool with x402 payment"}},
+    "/faucet/claim": {"post": {"summary": "Claim test credits"}},
+    "/verify/{payment_id}": {"get": {"summary": "Verify payment receipt"}}
+  }
+}

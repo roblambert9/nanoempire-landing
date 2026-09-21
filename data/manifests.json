@@ -1,0 +1,9 @@
+﻿{
+  "servers": [
+    {"name": "nano-empire-mcp", "url": "https://nano-empire-mcp-1064490927432.us-central1.run.app/mcp", "tools": 36},
+    {"name": "virtual-card-mcp", "url": "https://virtual-card-mcp-1064490927432.us-central1.run.app/mcp", "tools": 12},
+    {"name": "huggingbay-mcp", "url": "https://huggingbay-monetized-1064490927432.us-central1.run.app/mcp", "tools": 18}
+  ],
+  "total_tools": 66,
+  "updated": "2026-09-21T00:00:00Z"
+}

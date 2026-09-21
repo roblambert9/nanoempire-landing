@@ -1,17 +1,13 @@
 ﻿<!DOCTYPE html>
-<html><head><title>Nano Empire AI — Manifests Registry</title>
+<html><head><title>Nano Empire AI - Manifests Registry</title>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<style>body{font-family:system-ui;max-width:900px;margin:2rem auto;padding:0 1rem}
-table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;padding:.5rem;text-align:left}
-th{background:#f5f5f5}</style></head><body>
+<style>body{font-family:system-ui;max-width:900px;margin:2rem auto;padding:0 1rem}table{width:100%;border-collapse:collapse}th,td{border:1px solid #ddd;padding:0.5rem;text-align:left}th{background:#f5f5f5}</style></head><body>
 <h1>Manifests Registry</h1>
-<p>Live MCP server manifests for Nano Empire AI. Source: <a href="https://api.nanoempireai.com/mcp/manifest">/mcp/manifest</a></p>
-<table><thead><tr><th>Server</th><th>Manifest URL</th><th>Status</th></tr></thead>
-<tbody id="rows"><tr><td colspan=3>Loading…</td></tr></tbody></table>
+<p>Live MCP server manifests for Nano Empire AI</p>
+<table><thead><tr><th>Server</th><th>Manifest</th><th>Tools</th><th>Status</th></tr></thead><tbody id="manifests"></tbody></table>
 <script>
-fetch('https://api.nanoempireai.com/mcp/manifest').then(r=>r.json()).then(d=>{
-  document.getElementById('rows').innerHTML =
-    d.servers.map(s=>'<tr><td>'+s.name+'</td><td><a href="'+s.url+'">'+s.url+'</a></td><td>Live</td></tr>').join('')
-    + '<tr><td colspan=3><b>'+(d.tools?d.tools.length:0)+' tools</b> · updated '+d.last_updated+'</td></tr>';
-}).catch(()=>{document.getElementById('rows').innerHTML='<tr><td colspan=3>Failed to load manifest</td></tr>'});
-</script></body></html>
+fetch('https://nano-empire-mcp-1064490927432.us-central1.run.app/mcp/manifest')
+  .then(r=>r.json()).then(d=>{document.getElementById('manifests').innerHTML=d.servers.map(s=>\<tr><td>\</td><td><a href="\">\</a></td><td>\</td><td>🟢 Live</td></tr>\).join('')})
+  .catch(()=>{document.getElementById('manifests').innerHTML='<tr><td colspan=4>Failed to load</td></tr>'});
+</script>
+</body></html>

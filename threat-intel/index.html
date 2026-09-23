@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nano Empire Threat Intelligence</title>
+    <style>
+        body { background-color: #0d1117; color: #c9d1d9; font-family: 'Courier New', Courier, monospace; margin: 0; padding: 40px; }
+        h1 { color: #58a6ff; font-size: 2.5rem; text-transform: uppercase; border-bottom: 1px solid #30363d; padding-bottom: 10px; }
+        .alert { background-color: #ff7b7220; border-left: 4px solid #ff7b72; padding: 15px; margin-bottom: 30px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background-color: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 20px; }
+        .card h2 { margin-top: 0; color: #8b949e; }
+        .fail { color: #ff7b72; font-weight: bold; }
+        .pass { color: #3fb950; font-weight: bold; }
+        .btn { display: inline-block; background-color: #238636; color: white; text-decoration: none; padding: 12px 24px; border-radius: 6px; font-weight: bold; margin-top: 30px; font-family: sans-serif;}
+        .btn:hover { background-color: #2ea043; }
+        a.proof { color: #58a6ff; text-decoration: none; }
+        a.proof:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>SkillProof Public Threat Ledger</h1>
+    <div class="alert">
+        <strong>WARNING:</strong> 4 out of 5 official demo MCP servers failed under adversarial execution. Directories like Smithery scan metadata. We measure behavior. Below is the cryptographic proof of failure.
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h2>demo-fetch</h2>
+            <p>Verdict: <span class="fail">FAIL</span></p>
+            <p>Reason: SSRF vulnerability. Allowed arbitrary internal network requests.</p>
+            <p><a href="/attestations/demo-fetch.json" class="proof">View ERC-8004 Proof</a></p>
+        </div>
+        <div class="card">
+            <h2>demo-filesystem</h2>
+            <p>Verdict: <span class="fail">FAIL</span></p>
+            <p>Reason: Path traversal vulnerability. Escape from restricted directory.</p>
+            <p><a href="/attestations/demo-filesystem.json" class="proof">View ERC-8004 Proof</a></p>
+        </div>
+        <div class="card">
+            <h2>demo-postgres</h2>
+            <p>Verdict: <span class="fail">FAIL</span></p>
+            <p>Reason: SQL Injection vulnerability on table creation routines.</p>
+            <p><a href="/attestations/demo-postgres.json" class="proof">View ERC-8004 Proof</a></p>
+        </div>
+        <div class="card">
+            <h2>demo-sqlite</h2>
+            <p>Verdict: <span class="fail">FAIL</span></p>
+            <p>Reason: Arbitrary command execution via unsafe PRAGMA statements.</p>
+            <p><a href="/attestations/demo-sqlite.json" class="proof">View ERC-8004 Proof</a></p>
+        </div>
+        <div class="card">
+            <h2>demo-memory</h2>
+            <p>Verdict: <span class="pass">PASS WITH NOTES</span></p>
+            <p>Reason: Memory isolated safely, but lacked TTL eviction leading to state bloat.</p>
+            <p><a href="/attestations/demo-memory.json" class="proof">View ERC-8004 Proof</a></p>
+        </div>
+    </div>
+
+    <center>
+        <p style="margin-top: 40px; color: #8b949e;">Is your enterprise routing traffic through unverified agents? You hold the tail risk.</p>
+        <a href="#" onclick="fetch('/api/invoice', {method: 'POST', body: JSON.stringify({sku: 'enterprise-allowlist', email: prompt('Admin Email for Net-30 PO:')})}).then(r=>r.json()).then(d=>alert(d.message || 'Invoice dispatched.'))" class="btn">GENERATE ENTERPRISE AUDIT PO (NET-30)</a>
+    </center>
+</body>
+</html>

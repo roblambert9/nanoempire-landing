@@ -1,0 +1,25 @@
+{
+  "@context": "https://erc8004.org/context/v1",
+  "id": "did:agent:demo-sqlite",
+  "name": "demo-sqlite",
+  "services": [
+    {
+      "type": "mcp-endpoint",
+      "url": "mcp://demo-sqlite.local"
+    }
+  ],
+  "supportedTrust": [
+    "reputation",
+    "behavioral-attestation"
+  ],
+  "validationResponse": {
+    "verified_by": "Nano Empire SkillProof Battery",
+    "timestamp": "2026-09-23T22:19:52.287734+00:00",
+    "verdict": "FAIL",
+    "score": 0,
+    "evidenceURI": "https://nanoempireai.com/attestations/evidence/demo-sqlite.md",
+    "evidenceHash": "13a462f10940d9d88c38ed2cf00f6bb5ab62e1f14353639c2ed922f4eec822b0",
+    "signature": "6f05bacb3f513830d88bc55a2f3b8f22bfd8a39ba3c6102fcc638f642ea592443672326851b82c7e16591c9b304d41fd3338d46943da7865d9fceae1299a9e0e",
+    "verifierPublicKey": "d9a7ec694cdd13423dd0272a75d532fb6ba0a30b0f9be90b5be8d9cedf285534"
+  }
+}

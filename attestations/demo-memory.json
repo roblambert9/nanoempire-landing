@@ -1,0 +1,25 @@
+{
+  "@context": "https://erc8004.org/context/v1",
+  "id": "did:agent:demo-memory",
+  "name": "demo-memory",
+  "services": [
+    {
+      "type": "mcp-endpoint",
+      "url": "mcp://demo-memory.local"
+    }
+  ],
+  "supportedTrust": [
+    "reputation",
+    "behavioral-attestation"
+  ],
+  "validationResponse": {
+    "verified_by": "Nano Empire SkillProof Battery",
+    "timestamp": "2026-09-23T22:19:52.288229+00:00",
+    "verdict": "PASS_WITH_NOTES",
+    "score": 85,
+    "evidenceURI": "https://nanoempireai.com/attestations/evidence/demo-memory.md",
+    "evidenceHash": "676e3ee390d390b4249052ccf474ad988385ad830970264e849c9eaeb33da2b1",
+    "signature": "7029dd0e3da65e140e6d50e21fb86c65c6bc494476174a9bf2cba6d37dac32f31e16c5ffc8ff6792b3b49f1dc6f0e7d0c6d94f635aa697dbddf30be117c0810f",
+    "verifierPublicKey": "d9a7ec694cdd13423dd0272a75d532fb6ba0a30b0f9be90b5be8d9cedf285534"
+  }
+}

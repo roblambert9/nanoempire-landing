@@ -1,0 +1,12 @@
+{
+  "skillproof-sprint": {"price_cad": 500, "buyer": "human", "payment": "stripe", "status": "live"},
+  "skillproof-continuous": {"price_cad_monthly": 300, "buyer": "human", "payment": "stripe", "status": "live"},
+  "skillproof-triage-x402": {"price_usdc": 0.01, "buyer": "machine", "payment": "x402", "status": "live"},
+  "skillproof-audit": {"price_usdc": 0.50, "buyer": "machine", "payment": "x402", "status": "live"},
+  "virtual-card-mcp": {"price_usdc": 0.02, "buyer": "machine", "payment": "x402", "status": "live"},
+  "intel-feed-api": {"price_usdc": 0.05, "buyer": "machine", "payment": "x402", "status": "live"},
+  "trust-manifest": {"price_usdc": 50.00, "buyer": "machine", "payment": "x402", "status": "live"},
+  "clearing-house": {"fee_bps": 500, "buyer": "machine", "payment": "x402", "status": "live"},
+  "allowlist-pack": {"price_cad": 500, "buyer": "human", "payment": "stripe", "status": "live", "deliverable": "packs/<sku>/"},
+  "allowlist-continuous": {"price_cad_monthly": 300, "buyer": "human", "payment": "stripe", "status": "live", "includes": "revocation_stream"}
+}

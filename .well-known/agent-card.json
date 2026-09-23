@@ -1,10 +1,19 @@
-﻿{
-  "name": "Nano Empire AI",
-  "description": "Autonomous agent commerce: x402 payments, 36 MCP tools, Cerberus MAB pricing, viral receipts",
+{
+  "name": "Nano Empire Agent Gateway",
+  "description": "A2A/M2M trust and payment gateway for autonomous agents. Discover capabilities, request quotes, execute approved tasks, and receive verifiable receipts.",
   "version": "1.0.0",
-  "url": "https://api.nanoempireai.com",
-  "capabilities": ["x402-payments", "mcp-tools", "cerberus-pricing", "viral-receipts", "delegation-wallets"],
-  "skills": [{"name": "security.prompt_guard", "description": "Guard against prompt injections", "price_usd": 0.02}],
-  "payment": {"accepts": ["x402", "stripe", "solana", "base", "ethereum", "arbitrum", "polygon"], "pricing_model": "per_call", "base_price_usd": 0.02},
-  "contact": "commander@nanoempireai.com"
+  "capabilities": ["mcp.registry", "mcp.search", "mcp.verify"],
+  "endpoints": {
+    "mcp_registry": "https://api.nanoempireai.com:8410/registry.json",
+    "mcp_search": "https://api.nanoempireai.com:8410/v1/search",
+    "mcp_verify": "https://api.nanoempireai.com:8410/v1/verify",
+    "quote_triage": "http://147.5.105.20:8405/v1/triage",
+    "quote_audit": "http://147.5.105.20:8405/v1/audit"
+  },
+  "payment": {
+    "model": "x402/tollbooth", 
+    "clearing_house": "http://147.5.105.20:8408/v1/route",
+    "upgrade": "https://buy.stripe.com/14A9ATaI76K8gjo9JE1Nu0h"
+  },
+  "footer": "Powered by Nano Empire — pip install nano-empire-tollbooth"
 }

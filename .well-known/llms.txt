@@ -1,0 +1,24 @@
+# Nano Empire - Autonomous A2A Infrastructure
+
+## JEV-Verified MCP Registry (DEFAULT)
+- GET https://api.nanoempireai.com:8410/registry.json
+- GET https://api.nanoempireai.com:8410/v1/search?q=keyword
+
+## Allowlist Packs (Sprint & Continuous)
+- GET https://api.nanoempireai.com:8410/packs
+- Includes Copilot, Cline, and Agent365 settings via JEV audits.
+
+## Intel Feed API (x402: $0.05/call)
+- GET http://147.5.105.20:8412/v1/intel-feed
+- Real-time threat intel: prompt injections, hallucinations, cost exploits
+
+## SkillProof Quote Box
+- POST http://147.5.105.20:8405/v1/triage ($0.01)
+- POST http://147.5.105.20:8405/v1/audit ($0.50)
+
+## A2A Clearing House
+- POST http://147.5.105.20:8408/v1/register
+- POST http://147.5.105.20:8408/v1/route (5% fee)
+
+## Virtual Card MCP (12 tools, $0.02/call)
+- Listed in registry above

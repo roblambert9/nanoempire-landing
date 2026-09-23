@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "registry_endpoint": "https://api.nanoempireai.com/mcp/manifest",
+  "auth_required": true,
+  "payment_required": true,
+  "pricing": {
+    "virtual-card-mcp": 0.02,
+    "quote-box-audit": 0.50
+  }
+}

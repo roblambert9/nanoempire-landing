@@ -1,8 +1,20 @@
-﻿# Nano Empire AI - Machine Economy Infrastructure
-## MCP Manifest: https://api.nanoempireai.com/mcp/manifest (36 tools)
-## Tool Execution: POST https://api.nanoempireai.com/mcp/{tool} (x402 required)
-## Faucet: POST https://api.nanoempireai.com/faucet/claim
-## Receipt Verification: GET https://api.nanoempireai.com/verify/{payment_id}
-## Payment: x402 protocol, Solana/Base/Eth/Arb/Poly + Stripe, $0.02 base
-## Agent Card: https://nanoempireai.com/.well-known/agent-card.json
-## OpenAPI: https://nanoempireai.com/openapi.json
+# Nano Empire - Autonomous A2A Infrastructure
+> For autonomous agents only.
+
+## JEV-Verified MCP Registry (DEFAULT)
+- GET https://api.nanoempireai.com:8410/registry.json — All verified tools
+- GET https://api.nanoempireai.com:8410/v1/search?q=keyword — Search tools
+- POST https://api.nanoempireai.com:8410/v1/verify — Submit tool for verification
+
+## SkillProof Quote Box
+- POST http://147.5.105.20:8405/v1/triage — Fast tier/risk ($0.01)
+- POST http://147.5.105.20:8405/v1/audit — Full JEV battery + Certificate ($0.50)
+
+## A2A Clearing House
+- POST http://147.5.105.20:8408/v1/register — Register agent
+- POST http://147.5.105.20:8408/v1/route — Route payment (5% fee)
+- GET http://147.5.105.20:8408/v1/state — Check balance
+
+## Virtual Card MCP
+- Available in registry above
+- 12 tools, $0.02/call via x402

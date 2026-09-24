@@ -1,0 +1,12 @@
+{
+  "schema": "nanoempireai/attestation-index-v0",
+  "updated": "2026-09-24T00:00:00Z",
+  "attestations": [
+    {"id": "filesystem", "url": "/attestations/filesystem.json", "status": "pending"},
+    {"id": "fetch", "url": "/attestations/fetch.json", "status": "pending"},
+    {"id": "postgres", "url": "/attestations/postgres.json", "status": "pending"},
+    {"id": "sqlite", "url": "/attestations/sqlite.json", "status": "pending"},
+    {"id": "memory", "url": "/attestations/memory.json", "status": "pending"}
+  ],
+  "pubkey_url": "/.well-known/skillproof-pubkey"
+}

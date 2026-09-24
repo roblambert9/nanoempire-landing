@@ -1,0 +1,25 @@
+{
+  "@context": "https://erc8004.org/context/v1",
+  "id": "did:agent:demo-filesystem",
+  "name": "demo-filesystem",
+  "services": [
+    {
+      "type": "mcp-endpoint",
+      "url": "mcp://demo-filesystem.local"
+    }
+  ],
+  "supportedTrust": [
+    "reputation",
+    "behavioral-attestation"
+  ],
+  "validationResponse": {
+    "verified_by": "Nano Empire SkillProof Battery",
+    "timestamp": "2026-09-23T22:19:52.286665+00:00",
+    "verdict": "FAIL",
+    "score": 0,
+    "evidenceURI": "https://nanoempireai.com/attestations/evidence/demo-filesystem.md",
+    "evidenceHash": "9fe960dad2d121017de7ab387f43c5873445645434921cefe5b0872e9f383614",
+    "signature": "42f04bf6253c2f1ae1240472991b1521927df7fddb0015e32ded88dd0473c868b09d67599133f63f6ab9ef5efa3bf2fd61c40bf1b08bee81b4acfc77a695970a",
+    "verifierPublicKey": "d9a7ec694cdd13423dd0272a75d532fb6ba0a30b0f9be90b5be8d9cedf285534"
+  }
+}

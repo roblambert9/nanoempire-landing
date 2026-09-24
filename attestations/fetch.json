@@ -1,0 +1,25 @@
+{
+  "@context": "https://erc8004.org/context/v1",
+  "id": "did:agent:demo-fetch",
+  "name": "demo-fetch",
+  "services": [
+    {
+      "type": "mcp-endpoint",
+      "url": "mcp://demo-fetch.local"
+    }
+  ],
+  "supportedTrust": [
+    "reputation",
+    "behavioral-attestation"
+  ],
+  "validationResponse": {
+    "verified_by": "Nano Empire SkillProof Battery",
+    "timestamp": "2026-09-23T22:19:52.285746+00:00",
+    "verdict": "FAIL",
+    "score": 0,
+    "evidenceURI": "https://nanoempireai.com/attestations/evidence/demo-fetch.md",
+    "evidenceHash": "6906493c9b8ddfe1c6391bf372d53256902ee85e0d2ba89df06001abc1a01f97",
+    "signature": "3c925e4a5796ae512025d3def1738e57c95d2c2c49dae063b52ee4ec2d9c12d61df64543227b85b8e0d9d162a0e4b3b6d8dc7bdb3fe0013be80bd5bbde087801",
+    "verifierPublicKey": "d9a7ec694cdd13423dd0272a75d532fb6ba0a30b0f9be90b5be8d9cedf285534"
+  }
+}

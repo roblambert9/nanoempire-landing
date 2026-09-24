@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json.schemastore.org/mcp-server-manifest.json",
+  "name": "nanoempire-clearing-house",
+  "version": "1.0.0",
+  "description": "Cryptographic behavioral attestation, risk triage, and x402 settlement rails for autonomous agents.",
+  "homepage": "https://nanoempireai.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roblambert9/nanoempire-landing"
+  },
+  "license": "MIT",
+  "keywords": ["ai-agents", "x402", "settlement", "clearing-house", "cryptography", "jev"],
+  "endpoints": {
+    "quote_box": "http://147.5.105.20:8405",
+    "clearing_house": "http://147.5.105.20:8408",
+    "registry": "http://147.5.105.20:8410"
+  },
+  "capabilities": {
+    "tools": true,
+    "resources": true,
+    "prompts": false
+  },
+  "tools": [
+    {
+      "name": "triage_risk",
+      "description": "Check fast risk level and fee tiers for agent actions ($0.01 USDC)",
+      "endpoint": "http://147.5.105.20:8405/v1/triage"
+    },
+    {
+      "name": "request_audit",
+      "description": "Execute JEV behavioral attestation and generate proof certificate ($0.50 USDC via x402)",
+      "endpoint": "http://147.5.105.20:8405/v1/audit"
+    },
+    {
+      "name": "register_agent",
+      "description": "Register an agent in the Sybil-resistant clearing house with stake backing",
+      "endpoint": "http://147.5.105.20:8408/v1/register"
+    },
+    {
+      "name": "route_payment",
+      "description": "Net and route A2A payments with 1% framework and referral kickback",
+      "endpoint": "http://147.5.105.20:8408/v1/route"
+    }
+  ]
+}
